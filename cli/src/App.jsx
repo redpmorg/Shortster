@@ -58,7 +58,8 @@ const App = () => {
         }
       })
       .catch((error) => {
-          setErr(error.message? error.message: error);
+        setResponse({});
+        setErr(error.message? error.message: error);
       });
   };
 
