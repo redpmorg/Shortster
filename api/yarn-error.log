@@ -1,0 +1,80 @@
+Arguments: 
+  /home/drleo/.nvm/versions/node/v16.13.2/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/drleo/.nvm/versions/node/v16.13.2/bin:/home/drleo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/drleo/Android/Sdk/emulator:/home/drleo/Android/Sdk/tools:/home/drleo/Android/Sdk/tools/bin:/home/drleo/Android/Sdk/platform-tools:/home/drleo/.yarn/bin:/home/drleo/Android/Sdk/emulator:/home/drleo/Android/Sdk/tools:/home/drleo/Android/Sdk/tools/bin:/home/drleo/Android/Sdk/platform-tools:/home/drleo/.yarn/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.13.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/drleo/Projects/shortner/api/package.json: Unexpected token } in JSON at position 1097
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "urlShortner",
+    "version": "1.0.0",
+    "description": "Url shortner API",
+    "main": "src",
+    "author": {
+      "name": "Leonard Lepadatu",
+      "email": "leonardlepadatu@yahoo.com"
+    },
+    "license": "MIT",
+    "directories": {
+      "lib": "src",
+      "test": "test/"
+    },
+    "engines": {
+      "node": "^16.0.0",
+      "yarn": ">= 0.18.0"
+    },
+    "type": "module",
+    "scripts": {
+      "test": "jest --config ./jest.config.json",
+      "dev": "nodemon src/",
+      "jest": "jest",
+      "start": "node src/",
+      "test:watch": "npm run test -- --watch"
+    },
+    "dependencies": {
+      "compression": "^1.7.4",
+      "cors": "^2.8.5",
+      "express": "^4.18.1",
+      "helmet": "^5.0.2",
+      "jest": "^28.1.0",
+      "nanoid": "^3.3.4",
+      "path": "^0.12.7",
+      "sequelize": "^6.3.3",
+      "sqlite3": "^5.0.8"
+    },
+    "devDependencies": {
+      "@babel/preset-env": "^7.17.10",
+      "@types/supertest": "^2.0.12",
+      "babel-jest": "^28.1.0",
+      "eslint": "^7.32.0 || ^8.2.0",
+      "eslint-config-airbnb-base": "^15.0.0",
+      "eslint-plugin-import": "^2.25.2",
+      "supertest": "^6.2.3",
+      "ts-jest": "^28.0.2"
+    }
+  }
+  
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
