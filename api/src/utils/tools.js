@@ -5,4 +5,13 @@ export const isUrl = (url) => {
   return url.match(regex);
 };
 
-
+// wrapper to workaround async errors not being transmitted correctly.
+export const makeHandlerAwareOfAsyncErrors = (handler) => {
+  return async function (req, res, next) {
+    try {
+      await handler(req, res);
+    } catch (error) {
+      next(error);
+    }
+  };
+}
