@@ -12,6 +12,6 @@ const sequelize = new Sequelize({
 
 url(sequelize)
 
-sequelize.sync({alter: true})
+// sequelize.sync({alter: true})
 // sequelize.sync({force: true})
 export default sequelize;
