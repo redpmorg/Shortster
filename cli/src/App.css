@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+  }
+  
+  .form {
+    margin: 2em;
+  }
+  
+  .form-item {
+    margin-bottom: 2em;
+  }
+  
+  .error {
+    color: brown;
+  }
